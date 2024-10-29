@@ -1,0 +1,65 @@
+/*
+* Style Works for Editor Only
+*/
+.wp-block-aab-group-accordion {
+	border: 1px dashed #cccc;
+	padding: 15px 15px 30px 15px !important;
+	.wp-block-aab-accordion-item {
+		.block-list-appender {
+			left: auto !important;
+			right: 0;
+			margin-left: 0 !important;
+		}
+	}
+	.block-list-appender {
+		left: 50% !important;
+		right: auto;
+		margin-left: -12px !important;
+	}
+	[aria-label="Add Single Accordion"] {
+		border-radius: 50% !important;
+		position: absolute;
+		bottom: -35px !important;
+	}
+}
+
+.wp-block-post-content{
+	.ezd-form-group{
+		input{
+			width: 100%;
+		}
+	}
+}
+.aab-pro-element.is-opened {
+    background: gainsboro;
+	cursor: pointer;
+	position: relative;
+	color: #0000004f;
+	&:after {
+		content: "PRO";
+		clear: both;
+		background: rgb(0 0 0 / 42%);
+		position: absolute;
+		top: 48px;
+		right: 3px;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: bold;
+		color: white;
+		z-index: 99999;
+		left: 4px;
+		bottom: 4px;
+		width: -webkit-fill-available;
+		border-radius: 3px;
+	}
+}
+
+.block-editor-block-styles__variants {
+	button {
+		&[aria-label="aab-style-pro-checked"] {
+			display: none !important;
+		}
+	}
+}

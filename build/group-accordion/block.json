@@ -1,0 +1,132 @@
+{
+	"apiVersion": 2,
+	"name": "aab/group-accordion",
+	"version": "0.1.0",
+	"title": "Group Accordion",
+	"category": "accordion-block",
+	"description": "Build Accordion and FAQs Easily.",
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"example": {
+		"attributes": {
+			"heading": "Accordion Heading"
+		}
+	},
+	"providesContext": {
+		"aagb/accordion-step" : "step",
+		"aagb/accordion-hasQaStyle" : "hasQaStyle",
+		"aagb/accordion-faqSchema" : "faqSchema",
+		"aagb/accordion-stepText" : "stepText",
+		"aagb/accordion-checkList" : "checkList",
+		"aagb/accordion-anchorLinksShow" : "anchorLinksShow",
+		"aagb/accordion-buttonShow" : "buttonShow",
+		"aagb/accordion-readMoreText" : "readText"
+	},
+	"attributes": {
+		"anchorLinksShow":{
+			"type": "boolean",
+			"default": false
+		},
+		"hasQaStyle": {
+			"type": "boolean",
+			"default": false
+		},
+		"uniqueId": {
+			"type": "string"
+		},
+		"activeAccordionBorder": {
+			"type": "object",
+			"default": {
+				"width": "1px",
+				"color": "#000000",
+				"style": "solid"
+			}
+		},
+		"searchShow":{
+			"type": "boolean",
+			"default": false
+		},
+		"showAllbtn":{
+			"type": "boolean",
+			"default": false
+		},
+		"closeText":{
+			"type": "string",
+			"default": "Close all"
+		},
+		"openText":{
+			"type": "string",
+			"default": "Show all"
+		},
+		"heading": {
+			"type": "string",
+			"default": "Accordion Heading"
+		},
+		"activetorClass": {
+			"type": "string",
+			"default": "click"
+		},
+		"faqSchema": {
+			"type": "boolean",
+			"default": false
+		},
+		"step": {
+			"type": "boolean",
+			"default": false
+		},
+		"stepText": {
+			"type": "string",
+			"default": "Continue"
+		},
+		"checkList": {
+			"type": "boolean",
+			"default": false
+		},
+		"buttonShow":{
+			"type": "boolean",
+			"default": false
+		},
+		"contentCount": {
+			"type": "number",
+			"default": 100
+		},
+		"readText":{
+			"type": "string",
+			"default": "Read More"
+		}
+	},
+	"styles": [
+		{
+			"name": "default",
+			"label": "Default",
+			"isDefault": true
+		},
+		{
+			"name": "qa",
+			"label": "Q A"
+		},
+		{
+			"name": "aab-style-pro-checked",
+			"label": "aab-style-pro-checked"
+		}
+	],
+	"textdomain": "advanced-accordion-block",
+	"editorScript": [
+		"file:./index.js",
+		"aagb-anchor",
+		"aagb-separate-accordion",
+		"aagb-accordion-group"
+	],
+	"editorStyle": "file:./index.css",
+	"style": [
+		"aagb-group-accordion"
+	],
+	"viewScript": [
+		"aagb-anchor",
+		"aagb-separate-accordion",
+		"aagb-accordion-group",
+		"aagb-group-accordion-frontend"
+	]
+}
